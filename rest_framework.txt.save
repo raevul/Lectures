@@ -1,0 +1,12 @@
+Зависимости:
+django, psycopg2-binary, Pillow, djangorestframework,проект, приложения
+В setting.py в INSTALLED_APPS зарегистрировать rest_framework
+
+Работа с БД создание архитектуры
+В модельке переопределить AdstracUser и BaseUserManager
+
+В менеджере BaseUserManager переопределить:
+create_user, create_superuser, _create_user
+В setting.py указать AUTH_USER_MODEL="приложение.модель
+"
+
